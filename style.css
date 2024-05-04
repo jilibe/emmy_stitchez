@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300, 400, 600;
+    font-style: normal;
+    position: relative;
+}
+
+.small {
+    display: none;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;  
+    background-image: url(./img/bg-pattern-desktop.svg); 
+    background-position: center;
+    background-size: cover;
+}
+
+.left{
+    width: 50%;
+    height: auto;
+    text-align: left;
+    padding: 50px 30px 0px 30px;
+    margin: 0 15px;
+}
+
+.main-container .left .logo-icon {
+    border-radius: 50px;
+    padding-left: 10%;
+    margin-top: -25px;
+    height: 150px;
+}
+
+.main-container .left h1 {
+    margin-top: 25px;
+    color: hsl(0, 36%, 70%);
+    font-weight: 180;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    line-height: 4rem;
+    padding-left: 10%;
+}
+
+.main-container .left span {
+    color: black;
+    font-weight: 500;
+}
+
+
+.main-container .left p {
+    margin-top: 25px;
+    width: 70%;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5rem;
+    padding-left: 10%;
+    
+}
+
+.main-container .left form {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    padding-left: 10%;
+    max-width: 450px;
+    position: relative;
+    
+}
+
+.main-container .left input{
+    border-radius: 50px;
+    border: 1px solid hsl(0, 93%, 68%);
+    outline: none;
+    height: 50px;
+    padding-left: 15px;
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+
+}
+
+.main-container .left button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 80px;
+    top: 0;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+.main-container .left button:hover{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsla(0, 52%, 80%, 0.7));
+    box-shadow: 0px 0px 13px 1px #f4aaabbf;
+
+}
+
+.icon{
+    padding-top: 5px;
+}
+
+
+
+.main-container .left input::placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+}
+
+.sm {
+    padding-left: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 15px;
+    height: 40px;
+    width: 450px;
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 74%, 74%);
+    padding-right: 15px;
+    transition: 1s;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+.right{
+    background-image: url(./img/hero_image.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    .main-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small{
+        height: 130px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border-radius: 50px;
+        margin-bottom: 50px;
+    
+    }
+
+    .small-icon{
+        background-image: url(./asset/logo-1.png);
+        background-position: center;
+        background-size: cover; 
+        width: 50%;
+        height: 100%;
+    }
+
+    
+
+    .main-container .left .logo-icon{
+        display: none;
+    }
+
+    .left{
+        height: 10vh;
+        width: 100%;
+        text-align: center;
+        padding-left: 10%;
+    }
+
+    .right{
+        background-image: url(./img/hero_image.JPG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        width: 100%;
+        z-index: 1;
+        margin-top: 150px;
+    }
+
+    .main-container .left h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .main-container .left p{
+        text-align: center;
+        width: 100%;
+
+    }
+    .main-container .left h1{
+        font-size: 2.5rem;
+    }
+
+    .sm {
+        width: 100%;
+        text-align: center;
+        padding-left: 120px;
+    }
+
+
+}
